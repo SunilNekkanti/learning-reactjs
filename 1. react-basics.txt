@@ -22,9 +22,36 @@ React Basics:
 		In Angular, Data Binding is done via linking function
 
 		When a Component is initialized, it calls the render() to render a lightweight representation of the view.
-		From that representatio, a string of markup is produced and injected into the document.
+		From that representation, a string of markup is produced and injected into the document.
 		When the data changes, render() is called again.
 		To perform updates efficiently, differentiate the old value from new one and generate minial set of changes to be applied to the DOM.
 		Tying functionality directly to markup and packaging it in a portable, self contained "component" will make you happier and less filthy in general. 
+
+
+		Advantages:
+		-----------
+
+			* Looking at source file  we can tell how component will  render.
+			* Bundling JS and HTML into JSX makes it easily understandable.
+			* Render react on server.
+
+				SoundClound (Pure Front-end)
+				Stackoverflow (Pure-Backend)
+
+		BAD:
+		---
+			* React is only the View in MVC
+			* Don't get the following
+				* Promises
+				* Application Framework
+				* Data Layer
+				* Any AJAX Capabilities
+
+
+		Flux is a pattern not a Framework
+		
+		The concept "Flux" is simply that your view triggers an event (say, after user types a name in a text field), that event updates a model, then the model triggers an event, and the view responds to that model's event by re-rendering with the latest data. That's it.
+				
+
 
 
