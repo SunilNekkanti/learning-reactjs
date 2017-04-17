@@ -1,0 +1,30 @@
+React Basics:
+----------
+
+	* The big idea behind React is this: what if you could create your own HTML element that has customized functionality
+	* For example, one could make a <CommentBox> element that would display a textarea, run validations on the text typed into the textarea, submits the form when the enter key is pressed, etc — all just by including one line of code: <CommentBox></CommentBox>
+
+		Components(React)  <=>  Directives(Angular)
+
+		<HomePage>
+			<Header tab-selected="home">
+			<ScrollingBanner>Welcome to my webpage!</ScrollingBanner>
+			<p> Enter your info  if you want to get in touch </p>
+			<ContactForm />
+			<Footer />
+		</HomePage>
+
+		Custom HTML Tags with Custom Functionality
+
+		React isn't a MVC
+		Doesn't use Templates
+		React really shines when your data changes over time.
+		In Angular, Data Binding is done via linking function
+
+		When a Component is initialized, it calls the render() to render a lightweight representation of the view.
+		From that representatio, a string of markup is produced and injected into the document.
+		When the data changes, render() is called again.
+		To perform updates efficiently, differentiate the old value from new one and generate minial set of changes to be applied to the DOM.
+		Tying functionality directly to markup and packaging it in a portable, self contained "component" will make you happier and less filthy in general. 
+
+
